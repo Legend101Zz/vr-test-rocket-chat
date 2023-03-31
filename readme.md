@@ -1,5 +1,7 @@
 # VR College Campus Experience
 
+> deployed at https://college-vr-test.netlify.app
+
 This VR project allows users to experience a virtual college campus in full 3D. The project is designed to provide an immersive experience for users who want to explore the campus, its buildings, and surrounding areas.
 
 # Features
