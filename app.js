@@ -77,7 +77,7 @@ class App {
     const self = this;
 
     loader.load(
-      "../../assets/hdr/venice_sunset_1k.hdr",
+      "./assets/venice_sunset_1k.hdr",
       (texture) => {
         const envMap = pmremGenerator.fromEquirectangular(texture).texture;
         pmremGenerator.dispose();
@@ -100,7 +100,7 @@ class App {
   loadCollege() {
     const loader = new GLTFLoader().setPath(this.assetsPath);
     const dracoLoader = new DRACOLoader();
-    dracoLoader.setDecoderPath("../../libs/three/js/draco/");
+    dracoLoader.setDecoderPath("./libs/three/js/draco/");
     loader.setDRACOLoader(dracoLoader);
 
     const self = this;
@@ -108,7 +108,7 @@ class App {
     // Load a glTF resource
     loader.load(
       // resource URL
-      "city2.glb",
+      "./assets/college.glb",
       // called when the resource is loaded
       function (gltf) {
         const college = gltf.scene.children[0];
