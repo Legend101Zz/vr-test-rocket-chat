@@ -108,10 +108,11 @@ class App {
     // Load a glTF resource
     loader.load(
       // resource URL
-      "./assets/college.glb",
+      "college.glb",
       // called when the resource is loaded
       function (gltf) {
         const college = gltf.scene.children[0];
+        console.log(college);
         self.scene.add(college);
 
         college.traverse(function (child) {
